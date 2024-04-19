@@ -1,0 +1,85 @@
+import * as React from "react";
+import styled from "styled-components";
+
+function MyComponent() {
+  return (
+    <Div>
+      <Div2>Hack-Innovative ART GALLERY</Div2>
+      <Div3>
+        <Div4>Exhibition</Div4>
+        <Div5>Our Vision</Div5>
+        <Div6>Our Artists</Div6>
+      </Div3>
+      <Div7 />
+    </Div>
+  );
+}
+
+const Div = styled.div`
+  justify-content: space-between;
+  align-items: center;
+  border-color: rgba(0, 0, 0, 1);
+  border-style: solid;
+  border-width: 1px;
+  background-color: #000;
+  display: flex;
+  gap: 20px;
+  color: #f9fafb;
+  font-weight: 400;
+  padding: 6px 8px 0;
+  @media (max-width: 991px) {
+    flex-wrap: wrap;
+  }
+`;
+
+const Div2 = styled.div`
+  align-self: stretch;
+  justify-content: center;
+  margin: auto 0;
+  padding: 0 8px;
+  font: 16px/150% Source Sans Pro, sans-serif;
+`;
+
+const Div3 = styled.div`
+  align-self: stretch;
+  display: flex;
+  gap: 16px;
+  font-size: 12px;
+  line-height: 160%;
+  margin: auto 0;
+  padding: 0 16px;
+`;
+
+const Div4 = styled.div`
+  font-family: Source Sans Pro, sans-serif;
+  white-space: nowrap;
+  justify-content: center;
+  padding: 10px 16px;
+  @media (max-width: 991px) {
+    white-space: initial;
+  }
+`;
+
+const Div5 = styled.div`
+  font-family: Source Sans Pro, sans-serif;
+  justify-content: center;
+  padding: 10px 16px;
+`;
+
+const Div6 = styled.div`
+  font-family: Source Sans Pro, sans-serif;
+  justify-content: center;
+  padding: 10px 16px;
+`;
+
+const Div7 = styled.div`
+  border-radius: 8px;
+  border-color: rgba(0, 0, 0, 1);
+  border-style: solid;
+  border-width: 1px;
+  align-self: stretch;
+  width: 124px;
+  height: 48px;
+  padding: 12px 20px;
+`;
+
